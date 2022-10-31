@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Race Registration!</h1>
+    <form action="" method="get" class=" regform"></form>
+    <div class="regform">
+        <label for="firstname">First name</label>
+        <input type="text" name="firstname" id="firstname" required>
+    </div><br>
+    <div class="regform">
+        <label for="lastname">Last name</label>
+        <input type="text" name="lastname" id="lastname" required>
+    </div>
+    <form method="post">
+        <fieldset>
+            <legend>Select a race:</legend>
+            <div>
+                <input type="radio" id="funrun" name="race" value="Fun Run 5k">
+                <label for="Fun Run 5k">Fun Run 5k</label>
+            </div>
+            <div>
+                <input type="radio" id="halfmarathon" name="race" value="Half Marathon">
+                <label for="Half Marathon">Half Marathon</label>
+            </div>
+            <div>
+                <input type="radio" id="fullmarathon" name="race" value="Fun Marathon">
+                <label for="Fun Marathon">Fun Marathon</label>
+            </div>
+        </fieldset>
+        <div class="emailBox"><br>
+            <label for="Email Address">Email Address</label><br>
+            <input type="email" id="email" size="64" maxlength="64" required placeholder="username@mail.com">
+        </div>
+        <div class="pwdBox"><br>
+            <label for="Password">Password</label><br>
+            <input type="password" id="password" minlength="8" required>
+        </div>
+        <input type="submit" value="Register"><br>
+    </form>
+</body>
+
+</html>
